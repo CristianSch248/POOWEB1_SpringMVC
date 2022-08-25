@@ -1,0 +1,25 @@
+INSERT INTO hospital(nome_hospital, endereco, email_hospital, contato) VALUES('husm', 'ufsm', 'husm@email.com', '1234-5678');
+
+INSERT INTO usuario(nome_usuario, email_usuario, senha, id_hospital) VALUES('fulano', 'fulano@email.com', '1234', 1);
+INSERT INTO usuario(nome_usuario, email_usuario, senha, id_hospital) VALUES('siclano', 'siclano@email.com', '1234', 1);
+INSERT INTO usuario(nome_usuario, email_usuario, senha, id_hospital) VALUES('beltrano', 'beltrano@email.com', '1234', 1);
+
+INSERT INTO medico(nome_medico, especialidade, id_hospital) VALUES('carlos', 'pediatra', 1);
+INSERT INTO medico(nome_medico, especialidade, id_hospital) VALUES('maria', 'dentista', 1);
+INSERT INTO medico(nome_medico, especialidade, id_hospital) VALUES('julio', 'clinico geral', 1);
+
+INSERT INTO paciente(nome_paciente, idade, sexo, CPF, telefone) VALUES('julia', 20, 'feminino', '123.456.789-10', '(12)987654321');
+INSERT INTO paciente(nome_paciente, idade, sexo, CPF, telefone) VALUES('marta', 30, 'feminino', '098.765.432-11', '(11)123456789');
+INSERT INTO paciente(nome_paciente, idade, sexo, CPF, telefone) VALUES('carlos', 25, 'masculino', '111.222.333-44', '(11)233445566');
+
+INSERT INTO consulta(data, caso, status_consulta, id_paciente, id_medico) VALUES(CURRENT_DATE, 'machucado', true, 1, 3);
+INSERT INTO consulta(data, caso, status_consulta, id_paciente, id_medico) VALUES(CURRENT_DATE, 'dor na perna', true, 2, 3);
+INSERT INTO consulta(data, caso, status_consulta, id_paciente, id_medico) VALUES(CURRENT_DATE, 'dor no braço', true, 3, 3);
+
+select * from hospital 
+select * from usuario
+select * from medico
+select * from paciente
+select * from consulta
+
+
